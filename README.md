@@ -1,4 +1,4 @@
-# yaoyao-liu.github.io
+# hsiaotsan.github.io
 
 [![LICENSE](https://img.shields.io/github/license/yaoyao-liu/minimal-light?style=flat-square&logo=creative-commons&color=EF9421)](https://github.com/yaoyao-liu/yaoyao-liu.github.io/blob/main/LICENSE)
 
@@ -8,7 +8,7 @@ For more details, please refer to this repository: <https://github.com/yaoyao-li
 
 ### Using Locally with Jekyll
 
-You need to install [Ruby](https://www.ruby-lang.org/en/) and [Jekyll](https://jekyllrb.com/) fisrt.
+You need to install [Ruby](https://www.ruby-lang.org/en/) and [Jekyll](https://jekyllrb.com/) first.
 
 Install and run:
 
