@@ -1,6 +1,6 @@
 main:
 
-  - title: Perimeter Control Using Deep Reinforcement Learning: A Model-free Approach towards Homogeneous Flow Rate Optimization
+  - title: Perimeter Control Using Deep Reinforcement Learning - A Model-free Approach towards Homogeneous Flow Rate Optimization
     authors: <strong>Xiaocan Li<sup>#</sup></strong>, Ray Coden Mercurius, Ayal Taitler, Xiaoyu Wang, Mohammad Noaeen, Scott Sanner, Baher Abdulhai (<sup>#</sup>Corresponding author)
     conference_short: ITSC
     conference: 26th IEEE International Conference on Intelligent Transportation Systems, 2023
