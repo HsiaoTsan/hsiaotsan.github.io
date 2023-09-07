@@ -1,36 +1,36 @@
 main:
 
   - title: Perimeter Control Using Deep Reinforcement Learning - A Model-free Approach towards Homogeneous Flow Rate Optimization
-    authors: <strong>Xiaocan Li<sup>#</sup></strong>, Ray Coden Mercurius, Ayal Taitler, Xiaoyu Wang, Mohammad Noaeen, Scott Sanner, Baher Abdulhai (<sup>#</sup>Corresponding author)
+    authors: <strong>Xiaocan Li</strong>, Ray Coden Mercurius, Ayal Taitler, Xiaoyu Wang, Mohammad Noaeen, Scott Sanner, Baher Abdulhai
     conference_short: ITSC
     conference: 26th IEEE International Conference on Intelligent Transportation Systems, 2023
     pdf: https://arxiv.org/pdf/2305.19291.pdf
-    image: https://img.yliu.me/teaser/dst.png
+    image: ./assets/img/cover-itsc2023.png
 
   - title: Revisiting Random Forests in a Comparative Evaluation of Graph Convolutional Neural Network Variants for Traffic Prediction
-    authors: Ta Jiun Ting, <strong>Xiaocan Li<sup>#</sup></strong>, Scott Sanner, Baher Abdulhai (*Corresponding authors)
+    authors: Ta Jiun Ting, <strong>Xiaocan Li</strong>, Scott Sanner, Baher Abdulhai
     conference_short: ITSC
     conference: 24th IEEE International Conference on Intelligent Transportation Systems, 2021
     pdf: https://arxiv.org/pdf/2305.19292.pdf
-    image: https://img.yliu.me/teaser/miccai2023.png
+    image: ./assets/img/cover-itsc2021-qew.png
 
   - title: Generalized Visual-tactile Transformer Network for Slip Detection
-    authors: Shaowei Cui, Junhang Wei, <strong>Xiaocan Li<sup>#</sup></strong>, Rui Wang, Yu Wang, Shuo Wang
+    authors: Shaowei Cui, Junhang Wei, <strong>Xiaocan Li</strong>, Rui Wang, Yu Wang, Shuo Wang
     conference_short: IFAC
     conference: International Federation of Automatic Control, 2020
     pdf: https://ifatwww.et.uni-magdeburg.de/ifac2020/media/pdfs/3829.pdf
-    image: https://img.yliu.me/teaser/cvpr23_1.png
+    image: ./assets/img/cover-ifac2020-robot.png
 
   - title: Learning Category-level Implicit 3D Rotation Representations for 6D Pose Estimation from RGB Images
-    authors: <strong>Xiaocan Li<sup>#</sup></strong>, Yinghao Cai, Shuo Wang, Tao Lu
+    authors: <strong>Xiaocan Li</strong>, Yinghao Cai, Shuo Wang, Tao Lu
     conference_short: ROBIO
     conference: IEEE International Conference on Robotics and Biomimetics, 2021
     pdf: https://ieeexplore.ieee.org/document/8961408
-    image: https://img.yliu.me/teaser/cvpr23_2.png
+    image: ./assets/img/cover-robio2019.png
 
   - title: An Automatic Robot Skills Learning System from Robot’s Real-world Demonstrations
-    authors: Boyao Li, Tao Lu, <strong>Xiaocan Li<sup>#</sup></strong>, Yinghao Cai, Shuo Wang
+    authors: Boyao Li, Tao Lu, <strong>Xiaocan Li</strong>, Yinghao Cai, Shuo Wang
     conference_short: CCDC
     conference: Chinese Control And Decision Conference, 2019
     pdf: https://ieeexplore.ieee.org/abstract/document/8833143
-    image: https://img.yliu.me/teaser/OnlineHyperparameters.png
+    image: ./assets/img/cover-ccdc2019.png
