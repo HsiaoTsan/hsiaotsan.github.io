@@ -19,18 +19,18 @@ main:
     conference_short: IFAC
     conference: International Federation of Automatic Control, 2020
     pdf: https://ifatwww.et.uni-magdeburg.de/ifac2020/media/pdfs/3829.pdf
-    image: ./assets/img/cover-ifac2020-robot.png
+    image: ./assets/img/cover-ifac2020-robot.jpg
 
   - title: Learning Category-level Implicit 3D Rotation Representations for 6D Pose Estimation from RGB Images
     authors: <strong>Xiaocan Li</strong>, Yinghao Cai, Shuo Wang, Tao Lu
     conference_short: ROBIO
     conference: IEEE International Conference on Robotics and Biomimetics, 2021
     pdf: https://ieeexplore.ieee.org/document/8961408
-    image: ./assets/img/cover-robio2019.png
+    image: ./assets/img/cover-robio2019.jpg
 
   - title: An Automatic Robot Skills Learning System from Robot’s Real-world Demonstrations
     authors: Boyao Li, Tao Lu, <strong>Xiaocan Li</strong>, Yinghao Cai, Shuo Wang
     conference_short: CCDC
     conference: Chinese Control And Decision Conference, 2019
     pdf: https://ieeexplore.ieee.org/abstract/document/8833143
-    image: ./assets/img/cover-ccdc2019.png
+    image: ./assets/img/cover-ccdc2019.jpg
