@@ -12,7 +12,7 @@ I am fortunate to work with [Prof. Scott Sanner](https://d3m.mie.utoronto.ca/mem
 
 
 <!--
-<strong style="color:#e74d3c; font-weight:600"><strong style="color:#e74d3c; font-weight:600">I am currently on the 2023-2024 academic job market, looking for faculty positions in CS, CSE, ECE, IEOR, etc., related to Artificial Intelligence, Computer Vision, and Machine Learning. Please feel free to contact me if you are interested. I am also happy to give talks on my research in related seminars.</strong></strong>
+<strong style="color:#e74d3c; font-weight:600"><strong style="color:#e74d3c; font-weight:600">I am actively looking for a professional job position related to Artificial Intelligence, Applied Machine Learning, and Optimization. I will be on board as of 2024 Fall. </strong></strong>
 -->
 
 <!--
