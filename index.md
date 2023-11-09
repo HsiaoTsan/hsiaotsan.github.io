@@ -15,6 +15,8 @@ I am fortunate to work with [Prof. Scott Sanner](https://d3m.mie.utoronto.ca/mem
 
 {% include_relative _includes/awards.md %}
 
+{% include_relative _includes/projects.md %}
+
 {% include_relative _includes/publications.md %}
 
 {% include_relative _includes/services.md %}

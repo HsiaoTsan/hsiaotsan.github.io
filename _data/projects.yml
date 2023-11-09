@@ -1,0 +1,41 @@
+main:
+
+  - title: Traffic Perimeter Control via Model-free Deep Reinforcement Learning
+    description: The objective Traffic Perimeter Control is to maintain high traffic efficiency within protected regions by controlling transfer flows among regions. This project explores an innovative model-free perimeter control strategy through deep reinforcement learning to optimize traffic flow rates. Breaking away from traditional model-based methods, which often suffer from inaccuracies due to model bias, this approach leverages a microscopic simulation perspective. It incorporates detailed spatial characteristics and vehicle-level dynamics without relying on network transmission models or macroscopic fundamental diagrams. The results showcase the potential of our deep reinforcement learning method to match, and in some cases surpass, the performance of model-based approaches, highlighting its scalability and generalizability in managing traffic densities efficiently.
+    conference_short: ITSC
+    conference: 26th IEEE International Conference on Intelligent Transportation Systems, 2023
+    pdf: https://arxiv.org/pdf/2305.19291.pdf
+    image: ./assets/img/cover-itsc2023.png
+
+  - title: Traffic Flow Prediction via Graph Neural Networks with Spatial-Temporal Attention
+    description: This project undertakes a thorough comparison between state-of-the-art graph convolutional neural networks (GCNNs) and the established random forest regression in the realm of traffic prediction. By dissecting the components of GCNN models, including matrix factorization, attention mechanisms, and weight sharing, our study evaluates their impact on traffic prediction accuracy. Utilizing both simulated and real-world traffic data from Toronto and California, the analysis reveals that while GCNNs benefit from these sophisticated components, random forests remain competitive, challenging the notion that GCNNs are the superior method for capturing spatiotemporal traffic patterns. These insights not only highlight the robustness of random forests but also underscore the potential for further advancements in traffic prediction models.
+    conference_short: ITSC
+    conference: 24th IEEE International Conference on Intelligent Transportation Systems, 2021
+    pdf: https://arxiv.org/pdf/2305.19292.pdf
+    image: ./assets/img/cover-itsc2021-qew.png
+    keywords: Traffic Flow Prediction, Graph Neural Networks, Random Forest Regression, Attention Mechanism
+
+  - title: Computer Vision - Object 6D Pose Estimation
+    description: This project extends instance-level 6D pose estimation from RGB images to category level using a Denoising Autoencoder to learn implicit 3D rotation representations. By utilizing inexact CAD models or reconstructions as category representatives, the Denoising Autoencoder is trained on synthetic 3D views to extract geometry-shared features, yielding a latent representation that is robust to variations in texture, color, illumination, and pose ambiguities due to symmetry. Additionally, the method extends instance-level 3D translation estimation to the category level by considering the ratio of 3D diagonal lengths, achieving an efficient frame rate of 17Hz in practice. In my master's thesis, I additionally contrastive learning to enforce the similarities between rotation representations to be consistent with the rotation distance. This work paves the way for more generalized and efficient pose estimation in complex visual environments.
+    conference_short: ROBIO
+    conference: IEEE International Conference on Robotics and Biomimetics, 2021
+    pdf: https://ieeexplore.ieee.org/document/8961408
+    image: ./assets/img/cover-robio2019.jpg
+    keywords: Category-level Pose Estimation, Representation Learning, Self-supervised Learning, Contrastive Learning, Denoising Autoencoder
+
+
+  - title: Robotics - Slip Detection
+    description: In robotic manipulation, the slip detection of objects is crucial. A Visual-Tactile Transformer is designed to enhance robotic grasping by accurately detecting slips through combined visual and tactile data. This method surpasses traditional tactile-based techniques, adeptly handling unaligned and diverse sensory inputs. Tested on multiple datasets, our approach demonstrates superior performance and versatility in slip detection tasks, marking a significant advance in robotic manipulation.
+    conference_short: IFAC
+    conference: International Federation of Automatic Control, 2020
+    pdf: https://ifatwww.et.uni-magdeburg.de/ifac2020/media/pdfs/3829.pdf
+    image: ./assets/img/cover-ifac2020-robot.jpg
+    keywords: Slip Detection, Visual-Tactile Transformer, Robotic Manipulation
+
+  - title: Robotics - Robot Skills Learning via Reinforcement Learning
+    description: In order to avoid complicated programming difficulties in robot control, we propose an automatic robot learning system which can learn skills from real-world demonstrations by robot. The system utilizes RGB-D camera to record one robot’s demonstrations and then the demonstration data are processed and transferred into robot simulation environment. The policy model is trained entirely in simulation with the advantage of avoiding safety problem which is the key difficulty of real-world training. Then the learned policy is automatically transferred to another robot to reproduce the demonstrated skills. The experiments show that the system could automatically finish entire learning process from recording the robot demonstrations to applying the learned policy to another robot. And with the selected policy learning method, the robot could not only acquire skills but outperform the demonstrator.
+    conference_short: CCDC
+    conference: Chinese Control And Decision Conference, 2019
+    pdf: https://ieeexplore.ieee.org/abstract/document/8833143
+    image: ./assets/img/cover-ccdc2019.jpg
+    keywords: Learning from Demonstrations, Robot Skills Learning, Reinforcement Learning
