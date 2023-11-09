@@ -6,6 +6,7 @@ main:
     conference: 26th IEEE International Conference on Intelligent Transportation Systems, 2023
     pdf: https://arxiv.org/pdf/2305.19291.pdf
     image: ./assets/img/cover-itsc2023.png
+    keywords: Deep Reinforcement Learning, Traffic Perimeter Control, Traffic Flow Optimization, Traffic Simulation
 
   - title: Traffic Flow Prediction via Graph Neural Networks with Spatial-Temporal Attention
     description: This project undertakes a thorough comparison between state-of-the-art graph convolutional neural networks (GCNNs) and the established random forest regression in the realm of traffic prediction. By dissecting the components of GCNN models, including matrix factorization, attention mechanisms, and weight sharing, our study evaluates their impact on traffic prediction accuracy. Utilizing both simulated and real-world traffic data from Toronto and California, the analysis reveals that while GCNNs benefit from these sophisticated components, random forests remain competitive, challenging the notion that GCNNs are the superior method for capturing spatiotemporal traffic patterns. These insights not only highlight the robustness of random forests but also underscore the potential for further advancements in traffic prediction models.
@@ -13,7 +14,7 @@ main:
     conference: 24th IEEE International Conference on Intelligent Transportation Systems, 2021
     pdf: https://arxiv.org/pdf/2305.19292.pdf
     image: ./assets/img/cover-itsc2021-qew.png
-    keywords: Traffic Flow Prediction, Graph Neural Networks, Random Forest Regression, Attention Mechanism
+    keywords: Graph Neural Networks, Random Forest Regression, Attention Mechanism, Traffic Flow Prediction
 
   - title: Computer Vision - Object 6D Pose Estimation
     description: This project extends instance-level 6D pose estimation from RGB images to category level using a Denoising Autoencoder to learn implicit 3D rotation representations. By utilizing inexact CAD models or reconstructions as category representatives, the Denoising Autoencoder is trained on synthetic 3D views to extract geometry-shared features, yielding a latent representation that is robust to variations in texture, color, illumination, and pose ambiguities due to symmetry. Additionally, the method extends instance-level 3D translation estimation to the category level by considering the ratio of 3D diagonal lengths, achieving an efficient frame rate of 17Hz in practice. In my master's thesis, I additionally contrastive learning to enforce the similarities between rotation representations to be consistent with the rotation distance. This work paves the way for more generalized and efficient pose estimation in complex visual environments.
