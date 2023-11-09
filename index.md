@@ -13,9 +13,6 @@ I am fortunate to work with [Prof. Scott Sanner](https://d3m.mie.utoronto.ca/mem
 
 <strong style="color:#e74d3c; font-weight:600"><strong style="color:#e74d3c; font-weight:600">I am actively looking for an industry research position related to Artificial Intelligence, Applied Machine Learning, and Optimization. I will be on board as of 2024 Fall. Please feel free to contact me if you are interested. </strong></strong>
 
-<!--
-{% include_relative _includes/news.md %}
--->
 
 {% include_relative _includes/awards.md %}
 
@@ -23,6 +20,8 @@ I am fortunate to work with [Prof. Scott Sanner](https://d3m.mie.utoronto.ca/mem
 {% include_relative _includes/publications.md %}
 
 <!--
+{% include_relative _includes/news.md %}
+
 {% include_relative _includes/projects.md %}
 
 {% include_relative _includes/teaching.md %}
