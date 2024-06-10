@@ -14,7 +14,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;padding-top: 20px;">
       <h3><a href="{{ link.pdf }}">{{ link.title }}</a></h3>
       <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-        <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width:50%;height=auto;">
+        <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width:80%;height=auto;">
       </div>
     <div class="description"><strong>Description:</strong> {{ link.description }}</div>
     <div class="keywords"><strong>Keywords:</strong> {{ link.keywords }}</div>

@@ -1,5 +1,12 @@
 main:
 
+  - title: Generalized Multi-hop Traffic Pressure for Heterogeneous Perimeter Control
+    authors: <strong>Xiaocan Li</strong>, Xiaoyu Wang, Ilia Smirnov Scott Sanner, Baher Abdulhai
+#    conference_short: ITSC
+    conference: Submitted
+    pdf: ./assets/papers/Multi-hop_Pressure_for_Heterogeneous_Perimeter_Control.pdf
+    image: ./assets/img/multi-hop-pressure.png
+
   - title: Perimeter Control Using Deep Reinforcement Learning - A Model-free Approach towards Homogeneous Flow Rate Optimization
     authors: <strong>Xiaocan Li</strong>, Ray Coden Mercurius, Ayal Taitler, Xiaoyu Wang, Mohammad Noaeen, Scott Sanner, Baher Abdulhai
     conference_short: ITSC

@@ -1,5 +1,14 @@
 main:
 
+  - title: Generalized Multi-hop Traffic Pressure for Heterogeneous Perimeter Control
+    description: Perimeter control prevents loss of traffic network capacity caused by congestion in urban areas. The conventional homogeneous perimeter control often fails in urban areas with spatially heterogeneous congestion because such control does not consider location-specific traffic conditions around the perimeter. Our research introduces a multi-hop generalization of traffic pressure that extends the spatial consideration beyond immediate intersections, to modulate inflows more effectively according to actual congestion around each access point of the perimeter. This generalization allows us to adjust how far we can reach downstream links, providing a customizable spatial granularity of metrics that bridges the gap between the overly extensive scope of MFDs and the very limited scope of the traditional traffic pressure metric.
+#    conference_short: ITSC
+#    conference: 26th IEEE International Conference on Intelligent Transportation Systems, 2023
+    pdf: ./assets/papers/Multi-hop_Pressure_for_Heterogeneous_Perimeter_Control.pdf
+    image: ./assets/img/multi-hop-pressure-abstract-and-specific.png
+    keywords: Traffic Perimeter Control, Multi-hop Traffic Pressure, Markov Chain, Graph Walk
+
+
   - title: Traffic Perimeter Control via Model-free Deep Reinforcement Learning
     description: The objective Traffic Perimeter Control is to maintain high traffic efficiency within protected regions by controlling transfer flows among regions. This project explores an innovative model-free perimeter control strategy through deep reinforcement learning to optimize traffic flow rates. Breaking away from traditional model-based methods, which often suffer from inaccuracies due to model bias, this approach leverages a microscopic simulation perspective. It incorporates detailed spatial characteristics and vehicle-level dynamics without relying on network transmission models or macroscopic fundamental diagrams. The results showcase the potential of our deep reinforcement learning method to match, and in some cases surpass, the performance of model-based approaches, highlighting its scalability and generalizability in managing traffic densities efficiently.
     conference_short: ITSC
