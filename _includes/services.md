@@ -39,3 +39,12 @@
 <ul style="margin:0 0 20px;">
   <li><a href="https://www.sciencedirect.com/journal/expert-systems-with-applications"><autocolor>Expert Systems with Applications</autocolor></a></li>
 </ul>
+
+<h4 style="margin:0 10px 0;">Teaching Assistants</h4>
+<ul style="margin:0 0 20px;">
+  <li><a><autocolor>ECE1508: Reinforcement Learning</autocolor></a></li>
+  <ul style="margin:0 0 20px;">
+    <li><a><autocolor>Tutorials for Deep RL</autocolor></a></li>
+    <li><a><autocolor>Project Designer and Supervisor</autocolor></a></li>
+  </ul>
+</ul>
