@@ -6,6 +6,7 @@ main:
 #    conference: 26th IEEE International Conference on Intelligent Transportation Systems, 2023
     pdf: ./assets/papers/Multi-hop_Pressure_for_Heterogeneous_Perimeter_Control.pdf
     image: ./assets/img/multi-hop-pressure-abstract-and-specific.png
+    width: "100%"
     keywords: Traffic Perimeter Control, Multi-hop Traffic Pressure, Markov Chain, Graph Walk
 
 
@@ -15,6 +16,7 @@ main:
     conference: 26th IEEE International Conference on Intelligent Transportation Systems, 2023
     pdf: https://arxiv.org/pdf/2305.19291.pdf
     image: ./assets/img/cover-itsc2023.png
+    width: "70%"
     keywords: Deep Reinforcement Learning, Traffic Perimeter Control, Traffic Flow Optimization, Traffic Simulation
 
   - title: Traffic Flow Prediction via Graph Neural Networks with Spatial-Temporal Attention
@@ -23,6 +25,7 @@ main:
     conference: 24th IEEE International Conference on Intelligent Transportation Systems, 2021
     pdf: https://arxiv.org/pdf/2305.19292.pdf
     image: ./assets/img/cover-itsc2021-qew.png
+    width: "70%"
     keywords: Graph Neural Networks, Random Forest Regression, Attention Mechanism, Traffic Flow Prediction
 
   - title: Computer Vision - Object 6D Pose Estimation
@@ -31,15 +34,17 @@ main:
     conference: IEEE International Conference on Robotics and Biomimetics, 2021
     pdf: https://ieeexplore.ieee.org/document/8961408
     image: ./assets/img/cover-robio2019.jpg
+    width: "70%"
     keywords: Category-level Pose Estimation, Representation Learning, Self-supervised Learning, Contrastive Learning, Denoising Autoencoder
 
 
-  - title: Robotics - Slip Detection
+  - title: Robotics - Slip Detection with Transformer and Multi-modal Datasets
     description: In robotic manipulation, the slip detection of objects is crucial. A Visual-Tactile Transformer is designed to enhance robotic grasping by accurately detecting slips through combined visual and tactile data. This method surpasses traditional tactile-based techniques, adeptly handling unaligned and diverse sensory inputs. Tested on multiple datasets, our approach demonstrates superior performance and versatility in slip detection tasks, marking a significant advance in robotic manipulation.
     conference_short: IFAC
     conference: International Federation of Automatic Control, 2020
     pdf: https://ifatwww.et.uni-magdeburg.de/ifac2020/media/pdfs/3829.pdf
     image: ./assets/img/cover-ifac2020-robot.jpg
+    width: "50%"
     keywords: Slip Detection, Visual-Tactile Transformer, Robotic Manipulation
 
   - title: Robotics - Robot Skills Learning via Reinforcement Learning
@@ -48,4 +53,5 @@ main:
     conference: Chinese Control And Decision Conference, 2019
     pdf: https://ieeexplore.ieee.org/abstract/document/8833143
     image: ./assets/img/cover-ccdc2019.jpg
+    width: "80%"
     keywords: Learning from Demonstrations, Robot Skills Learning, Reinforcement Learning
