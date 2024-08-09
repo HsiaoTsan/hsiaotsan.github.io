@@ -16,7 +16,7 @@
       <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
         <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width:80%;height=auto;">
       </div>
-    <div class="description"><strong>Description:</strong> {{ link.description }}</div>
+    <div class="description" style="text-align: justify; text-indent: 0px;"><strong>Description:</strong> {{ link.description }}</div>
     <div class="keywords"><strong>Keywords:</strong> {{ link.keywords }}</div>
     <div class="links">
       {% if link.pdf %} 
