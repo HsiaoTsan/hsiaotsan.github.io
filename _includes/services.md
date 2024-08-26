@@ -38,10 +38,9 @@
 
 <ul style="margin:0 0 20px;">
   <li><a href="https://www.sciencedirect.com/journal/expert-systems-with-applications"><autocolor>Expert Systems with Applications</autocolor></a></li>
-</ul>
-<ul style="margin:0 0 20px;">
   <li><a href="https://trb-annual-meeting.nationalacademies.org/"><autocolor>Transportation Research Board Annual Meeting (TRBAM) </autocolor></a></li>
 </ul>
+
 
 <h4 style="margin:0 10px 0;">Teaching Assistants</h4>
 <ul style="margin:0 0 20px;">
