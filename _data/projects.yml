@@ -10,7 +10,6 @@ main:
     keywords: Deep Reinforcement Learning, Traffic Signal Control, Multi-hop Traffic Pressure, Markov Chain, Graph Walk
 
 
-
   - title: Generalized Multi-hop Traffic Pressure for Heterogeneous Perimeter Control
     description: Perimeter control prevents loss of traffic network capacity caused by congestion in urban areas. The conventional homogeneous perimeter control often fails in urban areas with spatially heterogeneous congestion because such control does not consider location-specific traffic conditions around the perimeter. Our research introduces a multi-hop generalization of traffic pressure that extends the spatial consideration beyond immediate intersections, to modulate inflows more effectively according to actual congestion around each access point of the perimeter. This generalization allows us to adjust how far we can reach downstream links, providing a customizable spatial granularity of metrics that bridges the gap between the overly extensive scope of MFDs and the very limited scope of the traditional traffic pressure metric.
 #    conference_short: ITSC
