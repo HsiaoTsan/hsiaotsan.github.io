@@ -31,7 +31,7 @@ main:
   - title: Learning Category-level Implicit 3D Rotation Representations for 6D Pose Estimation from RGB Images
     authors: <strong>Xiaocan Li</strong>, Yinghao Cai, Shuo Wang, Tao Lu
     conference_short: ROBIO
-    conference: IEEE International Conference on Robotics and Biomimetics, 2021
+    conference: IEEE International Conference on Robotics and Biomimetics, 2019
     pdf: https://ieeexplore.ieee.org/document/8961408
     image: ./assets/img/cover-robio2019.jpg
 
