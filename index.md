@@ -12,7 +12,7 @@ layout: homepage
 </div>
 
 <div style="text-align: justify; text-indent: 20px; margin-top: 20px;">
-  <strong style="color:#e74d3c; font-weight:600;">I am actively looking for a postdoc position related to Artificial Intelligence, Applied Machine Learning, and Optimization. I will be on board as of 2025 January. Please feel free to contact me if you are interested.</strong>
+  <strong style="color:#e74d3c; font-weight:600;">I am actively looking for a machine learning scientist or researcher position to solve real-world problems. I will be on board as of 2025 January. Please feel free to contact me if you are interested.</strong>
 </div>
 
 {% include_relative _includes/awards.md %}
