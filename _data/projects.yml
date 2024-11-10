@@ -6,7 +6,7 @@ main:
 #    conference: 26th IEEE International Conference on Intelligent Transportation Systems, 2023
     # pdf: ./assets/papers/Multi-hop_Pressure_for_Heterogeneous_Perimeter_Control.pdf
     image: ./assets/img/toronto-sheppard-hwy404.png
-    width: "50%"
+    width: "100%"
     keywords: Deep Reinforcement Learning, Traffic Signal Control, Multi-hop Traffic Pressure, Markov Chain, Graph Walk
 
 
