@@ -18,6 +18,14 @@
       </div>
     <div class="description" style="text-align: justify; text-indent: 0px;"><strong>Description:</strong> {{ link.description }}</div>
     <div class="keywords"><strong>Keywords:</strong> {{ link.keywords }}</div>
+
+    {% if link.video %}
+      <p>Video URL: {{ link.video }}</p>
+      <div class="video">
+        <iframe width="560" height="315" src="{{ link.video }}" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    {% endif %}
+
     <div class="links">
       {% if link.pdf %} 
       <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>

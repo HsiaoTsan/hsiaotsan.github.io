@@ -1,13 +1,14 @@
 main:
 
-  - title: Multi-hop Upstream Preemptive Traffic Signal Control with Deep Reinforcement Learning
-    description: Traffic signal control is crucial for managing congestion in urban networks. Existing myopic pressure-based control methods focus only on immediate upstream links, leading to suboptimal green time allocation and increased network delays. Effective signal control, however, inherently requires a broader spatial scope, as traffic conditions further upstream can significantly impact traffic at the current location. This paper introduces a novel concept, namely pressure with multi-hop upstream, that generalizes the conventional pressure to account for traffic conditions beyond the immediate upstream links. This farsighted and compact metric informs the reinforcement learning agent to preemptively optimize signal timings with a broader spatial awareness. Simulations on synthetic and realistic scenarios demonstrate controllers utilizing farsighted pressure significantly reduce overall network delay by prioritizing traffic movements based on a broader understanding of upstream congestion.
+  - title: Multi-hop Upstream Anticipatory Urban Traffic Signal Control with Deep Reinforcement Learning
+    description: Coordination in traffic signal control is crucial for managing congestion in urban networks. Existing pressure-based control methods focus only on immediate upstream links, leading to suboptimal green time allocation and increased network delays. However, effective signal control inherently requires coordination across a broader spatial scope, as the effect of upstream traffic should influence signal control decisions at downstream intersections, impacting a large area in the traffic network. Although agent communication using neural network-based feature extraction can implicitly enhance spatial awareness, it significantly increases the learning complexity, adding an additional layer of difficulty to the challenging task of control in deep reinforcement learning. To address the issue of learning complexity and myopic traffic pressure definition, our work introduces a novel concept based on Markov chain theory, namely \textit{multi-hop upstream pressure}, which generalizes the conventional pressure to account for traffic conditions beyond the immediate upstream links. This farsighted and compact metric informs the deep reinforcement learning agent to preemptively clear the multi-hop upstream queues, guiding the agent to optimize signal timings with a broader spatial awareness. Simulations on synthetic and realistic (Toronto) scenarios demonstrate controllers utilizing multi-hop upstream pressure significantly reduce overall network delay by prioritizing traffic movements based on a broader understanding of upstream congestion.
 #    conference_short: ITSC
 #    conference: 26th IEEE International Conference on Intelligent Transportation Systems, 2023
-    # pdf: ./assets/papers/Multi-hop_Pressure_for_Heterogeneous_Perimeter_Control.pdf
+    pdf: https://arxiv.org/abs/2411.07271
     image: ./assets/img/toronto-sheppard-hwy404.png
     width: "100%"
     keywords: Deep Reinforcement Learning, Traffic Signal Control, Multi-hop Traffic Pressure, Markov Chain, Graph Walk
+#    video: https://www.youtube.com/embed/boezS4C_MFc?si=4ppDR5zz_Lg875uO
 
 
   - title: Generalized Multi-hop Traffic Pressure for Heterogeneous Perimeter Control
