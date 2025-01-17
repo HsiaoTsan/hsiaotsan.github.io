@@ -8,7 +8,7 @@ main:
     image: ./assets/img/toronto-sheppard-hwy404.png
     width: "100%"
     keywords: Deep Reinforcement Learning, Traffic Signal Control, Multi-hop Traffic Pressure, Markov Chain, Graph Walk
-#    video: https://www.youtube.com/embed/boezS4C_MFc?si=4ppDR5zz_Lg875uO
+    video: https://www.youtube.com/embed/FyStcdbsUsk?si=uuc1YPtAUe59M5wV
 
 
   - title: Generalized Multi-hop Traffic Pressure for Heterogeneous Perimeter Control
