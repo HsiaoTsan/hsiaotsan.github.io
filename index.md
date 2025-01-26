@@ -12,7 +12,7 @@ layout: homepage
 
 <div style="text-align: justify; text-indent: 20px; margin-top: 20px;">
   <strong style="color:#e74d3c; font-weight:600;">
-Recently, I am working on RAG + Reranking for the on-premise deployment of a QA system for the user manual of a traffic simulator. Stay tuned for the open-source code!
+Recently, I am working on RAG + Reranking for the on-premise deployment of a QA system for the user manual of a traffic simulator. Refer to <a href="https://github.com/HsiaoTsan/RAG-Rerank">here</a> for the open-source code!
 </strong>
 </div>
 
