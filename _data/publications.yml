@@ -2,7 +2,7 @@ main:
   - title: Multi-hop Upstream Anticipatory Urban Traffic Signal Control with Deep Reinforcement Learning
     authors: <strong>Xiaocan Li</strong>, Xiaoyu Wang, Ilia Smirnov, Scott Sanner, Baher Abdulhai
     #    conference_short: ITSC
-    conference: Submitted
+    conference: Accepted, IEEE Open Journal of Intelligent Transportation Systems
     pdf: https://arxiv.org/abs/2411.07271
     image: ./assets/img/toronto-sheppard-hwy404.png
 
