@@ -1,6 +1,6 @@
 # Basic Information 
 title: Xiaocan (Bruce) Li
-position: Ph.D. Candidate
+position: Ph.D.
 affiliation: University of Toronto
 affiliation_link: https://d3m.mie.utoronto.ca/
 # affiliation_logo: ./assets/img/university-logo-small-horizontal-white-156eae9527.svg
@@ -9,7 +9,7 @@ email: hsiaotsan.li (at) mail.utoronto.ca
 # Search Engine Optimization (SEO)
 keywords: xiaocan li, li xiaocan, xiaocanli, xiaocan bruce li, lixiaocan
 canonical: https://hsiaotsan.github.io
-description: Xiaocan (Bruce) Li is a Ph.D. Candidate at the University of Toronto. His research focuses on using AI to solve real-world problems.
+description: Xiaocan (Bruce) Li is a Ph.D. at the University of Toronto. His research focuses on using AI to solve real-world problems.
 
 # The option is used to enable the Johns Hopkins template.
 enable_hopkins_logo: false
