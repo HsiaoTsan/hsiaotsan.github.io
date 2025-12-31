@@ -1,0 +1,84 @@
+baseURL: "http://localhost:4000/blog/"
+languageCode: en-us
+title: Xiaocan (Bruce) Li's Blog
+theme: PaperMod
+publishDir: "../_site/blog"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: Xiaocan (Bruce) Li's Blog
+  description: "Personal blog of Xiaocan (Bruce) Li, Ph.D. at University of Toronto"
+  keywords: [Blog, Research, AI, Machine Learning, Deep Learning, Xiaocan Li]
+  author: Xiaocan (Bruce) Li
+
+  # Home page
+  homeInfoParams:
+    Title: "Welcome to my blog"
+    Content: >
+      I'm a Ph.D. at the University of Toronto.
+      This blog is where I share my thoughts on AI, research, and life.
+      Visit my [academic homepage](/) for publications and projects.
+
+  # Social links
+  socialIcons:
+    - name: email
+      url: "mailto:hsiaotsan.li@mail.utoronto.ca"
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=0b7JUNQAAAAJ"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/xiaocanli-uoft/"
+
+  # Features
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  ShowShareButtons: false
+
+  # Cover image
+  cover:
+    linkFullImages: true
+
+  # Search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# Navigation menu
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: archives
+      name: Archives
+      url: /blog/archives/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /blog/search/
+      weight: 30
+
+# Output formats for search
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON

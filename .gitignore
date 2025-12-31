@@ -5,3 +5,9 @@ Gemfile.lock
 .DS_Store
 .jekyll-cache
 git-update.sh
+
+# Hugo-specific
+blog/public/
+blog/resources/
+.hugo_build.lock
+hugo_stats.json

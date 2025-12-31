@@ -7,6 +7,9 @@ main:
   - title: "Services"
     url: ./#services
 
+  - title: "Blog"
+    url: /blog/
+
   #- title: "Talks"
   #  url: ./#invited-talks
 

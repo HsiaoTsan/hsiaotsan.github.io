@@ -46,3 +46,10 @@ exclude:
   - README.md
   - LICENSE
   - CNAME
+  - blog/
+  - .hugo_build.lock
+  - hugo_stats.json
+
+# Keep Hugo blog output when Jekyll rebuilds
+keep_files:
+  - blog
