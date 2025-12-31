@@ -49,6 +49,8 @@ exclude:
   - blog/
   - .hugo_build.lock
   - hugo_stats.json
+  - vendor/
+  - node_modules/
 
 # Keep Hugo blog output when Jekyll rebuilds
 keep_files:
