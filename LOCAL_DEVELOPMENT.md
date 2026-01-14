@@ -131,6 +131,7 @@ sudo lsof -ti:1313 | xargs sudo kill -9
 ### Changes not showing
 - For blog changes: Run `./blog-dev.sh` instead of `./build-all.sh serve`
 - For homepage changes: Jekyll auto-regenerates on save
+- **WSL Note:** The `blog-dev.sh` script uses `--poll 1s` to work around WSL file system limitations. Changes may take 1-2 seconds to appear after saving
 
 ### Blog 404 on production
 - Ensure `baseURL` in `blog/config.yml` is set to `https://hsiaotsan.github.io/blog/`

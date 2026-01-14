@@ -4,6 +4,6 @@
 
 echo "Starting Hugo development server..."
 cd blog
-hugo server --buildDrafts --watch --baseURL http://localhost:1313/blog/
+hugo server --buildDrafts --watch --poll 1s --baseURL http://localhost:1313/blog/
 
 echo "Hugo blog: http://localhost:1313/blog/"
