@@ -40,17 +40,13 @@ Standard PPO becomes unstable under high staleness because it uses the same old 
 **Decoupled PPO** separates these roles:
 
 
-<!-- $$
-L^{\mathrm{CLIP}}_{\mathrm{decoupled}}(\theta) = \mathbb{E}_\mathrm{t}\Big[\underbrace{\frac{\pi_{\mathrm{prox}}(a_t|s_t)}{\pi_{\mathrm{behav}}(a_t|s_t)}}_{\text{Importance Weight}}\min\left(\frac{\pi_\theta (a_t|s_t)}{\pi_{\mathrm{prox}}(a_t|s_t)} \hat{A}_t, \mathrm{clip}\left(\underbrace{\frac{\pi_\theta(a_t|s_t)}{\pi_{\mathrm{prox}}(a_t|s_t)}}_{\text{Trust Region Anchor}}, 1-\epsilon, 1+\epsilon \right) \hat{A}_t \right)\Big]
-$$ -->
-
 
 <!-- Add a space in \pi _\theta solves the render issue.-->
 
 $$
 \begin{aligned}
 J(\theta) =
-\mathbb{E}\Big[\underbrace{\frac{\pi_{\mathrm{prox}}(a_t|s_t)}{\pi_{\mathrm{behav}}(a_t|s_t)}}_{\text{Importance Weight}}\min\left( \frac{\pi _\theta (a_t|s_t)}{\pi _{\mathrm{prox}}(a_t|s_t)} \hat{A}_t,  \mathrm{clip}\left( \underbrace{\frac{\pi _\theta (a_t|s_t)}{\pi _{\mathrm{prox}}(a_t|s_t)}} _{\text{Trust Region Anchor}}, 1-\epsilon, 1+\epsilon \right) \hat{A}_t \right) \Big]
+\mathbb{E}\Big[\underbrace{\frac{\pi_{\mathrm{prox}}(a_t|s_t)}{\pi_{\mathrm{behav}}(a_t|s_t)}}_{\text{Importance Weight}}\min( \frac{\pi _\theta (a_t|s_t)}{\pi _{\mathrm{prox}}(a_t|s_t)} \hat{A}_t,  \mathrm{clip}( \underbrace{\frac{\pi _\theta (a_t|s_t)}{\pi _{\mathrm{prox}}(a_t|s_t)}} _{\text{Trust Region Anchor}}, 1-\epsilon, 1+\epsilon ) \hat{A}_t ) \Big]
 \end{aligned}
 $$
 
@@ -304,7 +300,7 @@ The insight is simple: when designing RL algorithms for large-scale systems, **q
 
 - **Open-source implementation**: Available in the AReaL framework
 - **Paper**: Submitted to ICLR 2026
-- **Authors**: Xiao-Can (Bruce) Li, Shi-Liang (Bruce) Wu, Zheng Shen (Huawei Canada)
+- **Authors**: Xiao-Can (Bruce) Li, Shi-Liang (Bruce) Wu, Zheng Shen
 
 Try A-3PO in your asynchronous RL training and see the speedup for yourself!
 
