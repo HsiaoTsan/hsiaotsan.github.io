@@ -311,11 +311,14 @@ Try A-3PO in your asynchronous RL training and see the speedup for yourself!
 If you found this work useful, consider citing:
 
 ```bibtex
-@article{li2026a3po,
-  title={A-3PO: Accelerating Asynchronous LLM Training with Staleness-aware Proximal Policy Approximation},
-  author={Li, Xiao-Can and Wu, Shi-Liang and Shen, Zheng},
-  journal={ICLR},
-  year={2026}
+@misc{li2026a3poacceleratingasynchronousllm,
+      title={A-3PO: Accelerating Asynchronous LLM Training with Staleness-aware Proximal Policy Approximation}, 
+      author={Xiaocan Li and Shiliang Wu and Zheng Shen},
+      year={2026},
+      eprint={2512.06547},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2512.06547}, 
 }
 ```
 
