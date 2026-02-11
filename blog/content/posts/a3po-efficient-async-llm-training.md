@@ -4,7 +4,7 @@ date: 2025-02-05T10:00:00-08:00
 draft: false
 tags: ["Reinforcement Learning", "Large Language Models", "Policy Optimization", "Asynchronous Training", "PPO"]
 categories: ["Research"]
-description: "How we achieved 1.8× training speedup by approximating proximal policies instead of computing them explicitly"
+description: "How we achieved 1.8× training speedup by approximating proximal policies instead of computing them explicitly in Decoupled PPO"
 summary: "A simple yet principled approach to eliminate computational overhead in decoupled PPO while maintaining training stability and performance."
 math: true
 ---
@@ -292,15 +292,13 @@ Key takeaways:
 - **Better stability** with controlled importance weights
 - **Best benchmark performance** among all methods
 
-The insight is simple: when designing RL algorithms for large-scale systems, **question which components truly require expensive computation**. Sometimes the best solution is to not compute at all.
+The insight is simple: when designing RL algorithms for large-scale systems, **question which components truly require expensive computation**.
 
 ---
 
 ## Code & Resources
 
-- **Open-source implementation**: Available in the AReaL framework
-- **Paper**: Submitted to ICLR 2026
-- **Authors**: Xiao-Can (Bruce) Li, Shi-Liang (Bruce) Wu, Zheng Shen
+- **Open-source implementation**: Available in the [AReaL framework](https://github.com/inclusionAI/AReaL/blob/main/docs/algorithms/prox_approx.md)
 
 Try A-3PO in your asynchronous RL training and see the speedup for yourself!
 
