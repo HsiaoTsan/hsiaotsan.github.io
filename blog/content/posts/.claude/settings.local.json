@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(xargs cat:*)",
+      "Bash(bash:*)",
+      "WebFetch(domain:cdn.clustrmaps.com)"
+    ]
+  }
+}

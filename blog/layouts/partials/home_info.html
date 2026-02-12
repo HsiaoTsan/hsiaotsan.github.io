@@ -1,0 +1,20 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content">
+        {{ .Content | markdownify }}
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+</article>
+{{- end -}}
+{{- with site.Params.clustrmaps_id }}
+<div style="text-align: center; margin: 1rem auto;">
+    <script type="text/javascript" id="clustrmaps"
+        src="//cdn.clustrmaps.com/map_v2.js?cl=043361&w=300&t=tt&d={{ . }}&co=ffffff&cmo=3eb7f0&ct=043361">
+    </script>
+</div>
+{{- end }}
