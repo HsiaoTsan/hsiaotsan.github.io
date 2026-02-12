@@ -35,14 +35,14 @@ params:
   homeInfoParams:
     Title: "Welcome to my blog"
     Content: >
-      I'm a Ph.D. at the University of Toronto.
+      I proudly earned my Ph.D. degree at the University of Toronto.
       This blog is where I share my thoughts on AI, research, and life.
       Visit my [academic homepage](/) for publications and projects.
 
   # Social links
   socialIcons:
     - name: email
-      url: "mailto:hsiaotsan.li@mail.utoronto.ca"
+      url: "mailto:hsiaotsan.li@alumni.utoronto.ca"
     - name: googlescholar
       url: "https://scholar.google.com/citations?user=0b7JUNQAAAAJ"
     - name: linkedin
