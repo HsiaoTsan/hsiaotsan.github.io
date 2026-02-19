@@ -81,11 +81,11 @@ menu:
       weight: 10
     - identifier: archives
       name: Archives
-      url: /blog/archives/
+      url: /archives/
       weight: 20
     - identifier: search
       name: Search
-      url: /blog/search/
+      url: /search/
       weight: 30
 
 # Output formats for search
