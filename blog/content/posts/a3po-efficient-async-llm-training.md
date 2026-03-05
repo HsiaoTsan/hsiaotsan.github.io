@@ -9,6 +9,8 @@ summary: "A simple yet principled approach to eliminate computational overhead i
 math: true
 ---
 
+<p style="color: red; font-weight: bold; font-size: 1.1em;">Accepted by ICLR 2026 Workshop on Scaling Post-training for LLMs!</p>
+
 ## TL;DR
 
 We present **A-3PO** (APproximated Proximal Policy Optimization), a method that eliminates the expensive forward pass required by decoupled PPO in asynchronous RL training. By approximating the proximal policy through staleness-aware interpolation instead of explicit computation, we achieve:
