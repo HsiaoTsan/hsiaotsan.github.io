@@ -18,7 +18,7 @@ We present **A-3PO** (APproximated Proximal Policy Optimization), a method that 
 - **Better stability** with more controlled importance weights
 - **Comparable or better performance** across multiple benchmarks
 
-**Code available**: Open-source implementation in the [AReaL framework](https://github.com/inclusionAI/AReaL/blob/main/docs/algorithms/prox_approx.md)
+**Code available**: Open-source implementation in the [AReaL framework](https://github.com/inclusionAI/AReaL/blob/v1.0.0.rc1/docs/algorithms/prox_approx.md)
 
 ---
 
@@ -298,7 +298,7 @@ The insight is simple: when designing RL algorithms for large-scale systems, **q
 
 ## Code & Resources
 
-- **Open-source implementation**: Available in the [AReaL framework](https://github.com/inclusionAI/AReaL/blob/main/docs/algorithms/prox_approx.md)
+- **Open-source implementation**: Available in the [AReaL framework](https://github.com/inclusionAI/AReaL/blob/v1.0.0.rc1/docs/algorithms/prox_approx.md)
 
 Try A-3PO in your asynchronous RL training and see the speedup for yourself!
 
