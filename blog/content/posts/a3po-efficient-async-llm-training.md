@@ -153,7 +153,7 @@ That's it! No neural network forward pass—just element-wise arithmetic on tens
 
 ## Experiments: Does It Actually Work?
 
-We evaluated A-3PO on mathematical reasoning tasks using the [AReaL framework](https://github.com/garrett4wade/areal) across two setups:
+We evaluated A-3PO on mathematical reasoning tasks using the [AReaL framework](https://github.com/inclusionAI/AReaL/blob/v1.0.0.rc1/docs/algorithms/prox_approx.md) across two setups:
 
 ### Setup 1: Qwen2.5-1.5B-Instruct on GSM8K
 - **Model**: 1.5B parameter instruction-tuned model
