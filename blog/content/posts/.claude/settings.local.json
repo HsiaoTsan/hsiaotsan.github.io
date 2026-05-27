@@ -4,7 +4,12 @@
       "Bash(grep:*)",
       "Bash(xargs cat:*)",
       "Bash(bash:*)",
-      "WebFetch(domain:cdn.clustrmaps.com)"
+      "WebFetch(domain:cdn.clustrmaps.com)",
+      "Bash(gh api:*)",
+      "Bash(python3 -c \"import sys,json,base64; d=json.load\\(sys.stdin\\); print\\(base64.b64decode\\(d[''''content'''']\\).decode\\(\\)\\)\")",
+      "Bash(python3:*)",
+      "Bash(git clone:*)",
+      "Bash(hugo server:*)"
     ]
   }
 }

@@ -1,3 +1,6 @@
 {{ if or .Params.math .Site.Params.math }}
 {{ partial "math.html" . }}
 {{ end }}
+{{ if .Params.graph }}
+{{ partial "graph.html" . }}
+{{ end }}
