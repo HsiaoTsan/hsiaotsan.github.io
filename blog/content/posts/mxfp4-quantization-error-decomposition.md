@@ -180,8 +180,8 @@ A subtle but important point: AQN only works **after MBS** removes the first-mom
 
 We evaluate on GSM8K with verifiable rewards, using GRPO + Truncated Importance Sampling. Models:
 
-- **Qwen2.5-3B dense** (36 layers, 2× H100, FSDP2)
-- **Qwen3-30B-A3B-Base MoE** (48 layers, 3B active, 8× H100, Megatron)
+- **Qwen2.5-3B dense** (36 layers, FSDP2)
+- **Qwen3-30B-A3B-Base MoE** (48 layers, 3B active, Megatron)
 
 All experiments are W4A4 QDQ emulation — numerically faithful to native MXFP4 (same E2M1 grid, same E8M0 block scale, FP32 accumulation).
 
