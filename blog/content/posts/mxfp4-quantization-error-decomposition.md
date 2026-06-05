@@ -249,7 +249,7 @@ If you find our work useful, please kindly cite our work:
 ```bibtex
 @misc{li2026decomposingmxfp4quantizationerror,
       title={Decomposing MXFP4 quantization error for LLM reinforcement learning: reducible bias, recoverable deadzone, and an irreducible floor}, 
-      author={Xiaocan Li and Shiliang Wu and Zheng Shen},
+      author={Xiaocan Li and Shiliang Wu and Hei Yi Mak and Mehran Taghian and Yunke Peng and Zheng Shen},
       year={2026},
       eprint={2605.20402},
       archivePrefix={arXiv},
