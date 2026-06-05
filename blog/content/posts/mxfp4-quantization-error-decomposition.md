@@ -22,7 +22,7 @@ We prove that the MXFP4 error is **exactly the sum of three components with disj
 Each correction targets one mechanism: **MBS** (macro-block scaling) kills the scale bias, **OF** (outlier fallback with blend $\alpha=0.5$) recovers the deadzone, and **AQN** controls the residual grid noise. Validated on Qwen2.5-3B and Qwen3-30B-A3B-Base:
 
 - **Dense**: recovers BF16 within $-0.7$ pp (81.3% vs. 82.0%)
-- **MoE**: **MBS + OF exceeds BF16 by $+1.0$ pp** (92.49% vs. 91.51%)
+- **MoE**: **AQN+MBS+OF ($\alpha=0.5$) exceeds BF16 by $+1.0$ pp** (92.49% vs. 91.51%)
 
 ---
 
@@ -168,6 +168,8 @@ We introduce the **residual-blend coefficient $\alpha$**. Setting $\alpha = 1$ a
 | **0.5** (default) | **91.58%** | **92.49%** |
 | 1.0 | 90.45% | 90.45% |
 
+There's also a *training-dynamics* reason for $\alpha = 0.5$. In a controlled single-step isolation run (OF only, MBS/AQN disabled, learning rate 0, fixed prompts so $\alpha$ is the only varying quantity), the rollout-vs-training numerical drift is **U-shaped in $\alpha$ with a clean minimum at $0.5$** — both extremes ($\alpha=0$ and $\alpha=1$) incur ${\sim}1.5$–$2\times$ the drift. A half-strength residual best aligns the rollout fake-quantization grid with the training grid; because RL post-training is drift-sensitive, the $\alpha$ that minimizes drift is also the $\alpha$ that maximizes downstream accuracy.
+
 ### AQN — Adaptive Quantization Noise
 
 After MBS and OF, the residual error is dominated by grid noise — static and unannealed. **AQN** injects controlled Gaussian noise on weights before each rollout with an exponential decay schedule from $\sigma_{\mathrm{start}} = 1\%$ to $\sigma_{\mathrm{end}} = 0.1\%$. This converts the constant grid temperature into a *annealable* exploration signal.
@@ -194,10 +196,10 @@ All experiments are W4A4 QDQ emulation — numerically faithful to native MXFP4 
 | +OF | | | ✓ | 90.3 | −1.2 |
 | +AQN(1%) | ✓ | | | 89.2 | −2.3 |
 | +AQN+MBS | ✓ | ✓ | | 90.5 | −1.0 |
-| +AQN+MBS+OF | ✓ | ✓ | ✓ | 91.1 | −0.4 |
-| **+MBS+OF ($\alpha=0.5$)** | | ✓ | ✓ | **92.49** | **+1.0** |
+| +MBS+OF | | ✓ | ✓ | 91.1 | −0.4 |
+| **+AQN+MBS+OF ($\alpha=0.5$)** | ✓ | ✓ | ✓ | **92.49** | **+1.0** |
 
-**MBS + OF (no AQN, $\alpha = 0.5$) exceeds BF16 by +1.0 pp** — the new best recipe.
+**AQN+MBS+OF ($\alpha = 0.5$) exceeds BF16 by +1.0 pp** — the new best recipe.
 
 ### Dense results (Qwen2.5-3B, BF16 = 82.0%)
 
@@ -222,6 +224,10 @@ This is exactly the prediction of the decomposition — deadzone is a *forward-p
 ### Training dynamics: AQN prevents entropy collapse
 
 {{< figure src="/blog/images/mxfp4-decomposition/fig3_training_dynamics.png" alt="Training dynamics" caption="Figure 6: MoE GSM8K training dynamics. Baseline policy entropy collapses from 1.71 to 0.35 by step 50 (premature convergence). AQN+MBS sustains entropy at 0.61, with gradient norm 0.24 vs. baseline 0.16. The grid-noise → temperature widening predicted by theory is confirmed empirically." >}}
+
+### Scope: the floor that averages out in short responses compounds in long ones
+
+The "grid noise averages out over full responses" argument holds for short-to-medium responses (GSM8K, ~280 tokens / 1024-token budget). It reaches its limit as responses lengthen: holding the recipe family fixed, per-step rollout–training Pearson correlation is essentially identical on a short task (GSM8K) and a long one (DAPO-MATH, ~795 tokens) — yet outcomes diverge sharply, and on multi-thousand-token CoT the same recipe under-recovers substantially. The mechanism is an autoregressive trajectory fork under deterministic greedy decoding: a single early arg-max flip from quantization noise compounds into a different solution path. We treat long-CoT fidelity as scope-limited future work for this recipe (likely needing higher activation precision, e.g. W4A8).
 
 ---
 
