@@ -14,6 +14,10 @@ layout: homepage
   Currently, my research centers on <strong>self-evolving agentic AI</strong>, <strong>large language model post-training</strong>, and <strong>quantization-aware training</strong>.
 </div>
 
+<div style="text-align: justify; text-indent: 20px; margin-top: 20px;">
+  Outside of research, I enjoy <strong>learning new languages</strong>. I speak Mandarin, Fuzhounese (Eastern Min), Cantonese, English, and French.
+</div>
+
 [//]: # (<div style="text-align: justify; text-indent: 20px; margin-top: 20px;">)
 
 [//]: # (  <strong style="color:#e74d3c; font-weight:600;">)
