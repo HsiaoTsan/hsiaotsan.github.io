@@ -1,5 +1,26 @@
 main:
 
+  - title: "A-3PO: Accelerating Asynchronous LLM Training with Staleness-aware Proximal Policy Approximation"
+    description: Asynchronous reinforcement learning speeds up LLM post-training by running rollout and training as parallel engines, but the resulting staleness makes standard PPO unstable. Decoupled PPO restores stability by using a separate proximal policy as the trust-region anchor, yet computing that policy requires an extra forward pass through the model at every training step (~10 seconds for large models). A-3PO removes this cost by recognizing that the proximal policy does not need exact neural-network evaluation - it only needs to lie between the behavior and target policies. We approximate it via a staleness-aware log-linear interpolation, a few lines of element-wise tensor arithmetic on quantities already present in the training loop. This yields an 8,500x speedup in proximal-policy computation and up to 1.8x faster end-to-end training at 8B scale, while provably contracting importance weights toward 1 as staleness grows. On GSM8K, DAPO-Math, AIME24, and MATH500, A-3PO matches or exceeds explicit recomputation - the approximation is not only faster but more stable, clipping the fewest tokens of any method.
+    conference_short: ICLR-W
+    conference: ICLR 2026 Workshop on Scaling Post-training for LLMs
+    pdf: https://arxiv.org/abs/2512.06547
+    code: https://github.com/inclusionAI/AReaL/blob/v1.0.0.rc1/docs/algorithms/prox_approx.md
+    page: /blog/posts/a3po-efficient-async-llm-training/
+    image: /blog/images/a3po/setup2_ppo_actor_task_reward_avg_vs_time_plot.png
+    width: "100%"
+    keywords: Reinforcement Learning, Large Language Models, Asynchronous Training, Decoupled PPO, Policy Optimization
+
+  - title: "Decomposing MXFP4 Quantization Error for LLM Reinforcement Learning"
+    description: MXFP4 promises 4x throughput and 4x memory savings for LLM training on Blackwell/MI350-class accelerators, but naively applying it to RL post-training destroys accuracy (-21.9 pp on dense GSM8K). Prior work treats the quantization error as one monolithic noise term, which cannot explain why the same format hurts dense and MoE models so differently. We prove that MXFP4 error is exactly the sum of three components with disjoint structure - scale bias from the E8M0 power-of-two scale (which corrupts gradients through backward-pass amplification), deadzone truncation from zeroing small values (which corrupts rollouts through forward-pass information loss), and grid noise from rounding to the E2M1 grid (which raises policy entropy like an effective temperature). Two formal properties - exact orthogonality of the deadzone term and scale-invariance of grid noise - imply an irreducible error floor set by the grid itself. Each mechanism gets a matched correction - MBS (macro-block scaling) removes the scale bias, OF (outlier fallback with residual blend alpha=0.5) recovers the deadzone, and AQN (adaptive quantization noise) anneals the residual grid noise. On Qwen2.5-3B the recipe recovers BF16 within 0.7 pp; on Qwen3-30B-A3B-Base MoE it exceeds BF16 by +1.0 pp.
+    conference_short: arXiv
+    conference: Preprint, arXiv:2605.20402
+    pdf: https://arxiv.org/abs/2605.20402
+    page: /blog/posts/mxfp4-quantization-error-decomposition/
+    image: /blog/images/mxfp4-decomposition/fig2_error_decomp.png
+    width: "70%"
+    keywords: Quantization, MXFP4, Low-precision Training, Reinforcement Learning, Large Language Models
+
   - title: Multi-hop Upstream Anticipatory Urban Traffic Signal Control with Deep Reinforcement Learning
     description: Coordination in traffic signal control is crucial for managing congestion in urban networks. Existing pressure-based control methods focus only on immediate upstream links, leading to suboptimal green time allocation and increased network delays. However, effective signal control inherently requires coordination across a broader spatial scope, as the effect of upstream traffic should influence signal control decisions at downstream intersections, impacting a large area in the traffic network. Although agent communication using neural network-based feature extraction can implicitly enhance spatial awareness, it significantly increases the learning complexity, adding an additional layer of difficulty to the challenging task of control in deep reinforcement learning. To address the issue of learning complexity and myopic traffic pressure definition, our work introduces a novel concept based on Markov chain theory, namely "multi-hop upstream pressure", which generalizes the conventional pressure to account for traffic conditions beyond the immediate upstream links. This farsighted and compact metric informs the deep reinforcement learning agent to preemptively clear the multi-hop upstream queues, guiding the agent to optimize signal timings with a broader spatial awareness. Simulations on synthetic and realistic (Toronto) scenarios demonstrate controllers utilizing multi-hop upstream pressure significantly reduce overall network delay by prioritizing traffic movements based on a broader understanding of upstream congestion.
 #    conference_short: ITSC

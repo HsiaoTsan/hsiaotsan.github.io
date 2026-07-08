@@ -1,4 +1,21 @@
 main:
+  - title: "A-3PO: Accelerating Asynchronous LLM Training with Staleness-aware Proximal Policy Approximation"
+    authors: <strong>Xiaocan Li</strong>, Shiliang Wu, Zheng Shen
+    conference_short: ICLR-W
+    conference: ICLR 2026 Workshop on Scaling Post-training for LLMs
+    pdf: https://arxiv.org/abs/2512.06547
+    code: https://github.com/inclusionAI/AReaL/blob/v1.0.0.rc1/docs/algorithms/prox_approx.md
+    page: /blog/posts/a3po-efficient-async-llm-training/
+    image: /blog/images/a3po/setup2_ppo_actor_task_reward_avg_vs_time_plot.png
+
+  - title: "Decomposing MXFP4 Quantization Error for LLM Reinforcement Learning: Reducible Bias, Recoverable Deadzone, and an Irreducible Floor"
+    authors: <strong>Xiaocan Li</strong>, Shiliang Wu, Hei Yi Mak, Mehran Taghian, Yunke Peng, Zheng Shen
+    conference_short: arXiv
+    conference: Preprint, arXiv:2605.20402
+    pdf: https://arxiv.org/abs/2605.20402
+    page: /blog/posts/mxfp4-quantization-error-decomposition/
+    image: /blog/images/mxfp4-decomposition/fig2_error_decomp.png
+
   - title: Multi-hop Upstream Anticipatory Urban Traffic Signal Control with Deep Reinforcement Learning
     authors: <strong>Xiaocan Li</strong>, Xiaoyu Wang, Ilia Smirnov, Scott Sanner, Baher Abdulhai
     #    conference_short: ITSC
