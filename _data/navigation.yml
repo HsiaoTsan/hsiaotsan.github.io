@@ -7,9 +7,6 @@ main:
   - title: "Services"
     url: ./#services
 
-  - title: "Blog"
-    url: /blog/
-
   #- title: "Talks"
   #  url: ./#invited-talks
 
@@ -27,6 +24,9 @@ main:
 
   #- title: "News"
   #  url: ./#news
+
+  - title: "Blog"
+    url: /blog/
 
   - title: "Bio"
     url: ./#about-me
