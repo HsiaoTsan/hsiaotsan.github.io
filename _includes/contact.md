@@ -4,5 +4,5 @@
 
 <p>
 <br />
-<strong>Email:</strong> <email>hsiaotsan.li (at) mail.utoronto.ca</email>
+<strong>Email:</strong> <email>hsiaotsan.li (at) alumni.utoronto.ca</email>
 </p>
